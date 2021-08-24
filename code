@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int n=30;
+int temp=n,temp1=n;
+for(int i=1;i<=n;i++)
+{
+    for(int j=temp;j>=1;j--)
+    {
+        cout<<" ";
+    }
+    for(int k=1;k<=i;k++)
+    {
+
+       if(k==1 ||k==i)
+       {
+           cout<<"* ";
+       }
+       else
+        cout<<"  ";
+    }
+    temp--;
+    cout<<endl;
+}
+for(int i=1;i<=n;i++)
+{
+
+    for(int k=1;k<=i;k++)
+    {
+        cout<<" ";
+    }
+    for(int j=temp1;j>=1;j--)
+    {
+       if(j==1 ||j==temp1)
+       {
+           cout<<"* ";
+       }
+       else
+        cout<<"  ";
+
+
+    }
+    temp1--;
+    cout<<endl;
+}
+}
